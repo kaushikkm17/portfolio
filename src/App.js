@@ -21,18 +21,18 @@ const BasicParticles = () => {
         <pointsMaterial color="#5786F5" size={0.01} sizeAttenuation />
     </points>
     <Text
-        position={[0, 0, 0]}
+        position={[0, -0.3, 0.2]}
         fontSize={0.1}
         color="#ffffff"
         anchorX="center"
         anchorY="middle"
-        onClick={() => window.open("https://developer.mozilla.org/en-US/HTMLAnchorElement", "_blank")}
+        onClick={() => window.open("https://www.linkedin.com/in/kaushikdev", "_blank")}
     >
       Kaushik
         
     </Text>
     <Text
-        position={[0, -0.1, 0]}
+        position={[0, -0.5, 0.1]}
         fontSize={0.1}
         color="#ffffff"
         anchorX="center"
@@ -40,35 +40,45 @@ const BasicParticles = () => {
     >
         Full-Stack Developer
     </Text>
-    <Image url="https://res.cloudinary.com/dtpgi0zck/image/upload/s--fMAvJ-9u--/c_fit,h_580,w_860/v1/EducationHub/photos/sun-blasts-a-m66-flare.jpg" transparent opacity={0.5} />
+    <Image url="IMG_2781.jpg" transparent opacity={0.9} position={[0,0.3, 0]}/>
     </group>
 
-    <group onScroll={handleScroll} position={[0,0,10]}>
-    <points ref={points}>
+    <group onScroll={handleScroll} position={[0,0,5]}>
+    <points ref={points} >
         <sphereGeometry args={[1,100,100]} />
         <pointsMaterial color="#5786F5" size={0.01} sizeAttenuation />
     </points>
     <Text
-        position={[0, 0, 0]}
+        position={[0, -0.3, -0.5]}
         fontSize={0.1}
         color="#ffffff"
         anchorX="center"
         anchorY="middle"
         onClick={() => window.open("https://developer.mozilla.org/en-US/HTMLAnchorElement", "_blank")}
     >
-      Kaushik 2
+      Career Tracker
         
     </Text>
     <Text
-        position={[0, -0.1, 0]}
+        position={[0, -0.5, -0.5]}
         fontSize={0.1}
         color="#ffffff"
         anchorX="center"
         anchorY="middle"
     >
-        Full-Stack Developer
+        Job search app built with django
     </Text>
-    <Image url="https://res.cloudinary.com/dtpgi0zck/image/upload/s--fMAvJ-9u--/c_fit,h_580,w_860/v1/EducationHub/photos/sun-blasts-a-m66-flare.jpg" transparent opacity={0.5} />
+    <Text
+        position={[0, -0.7, -0.5]}
+        fontSize={0.1}
+        color="#bbb222"
+        anchorX="center"
+        anchorY="middle"
+        onClick={() => window.open("https://careertracker.herokuapp.com/", "_blank")}
+    >
+      Click here to view
+    </Text>
+    <Image url="career_tracker.png" opacity={1} position={[0,0.3, -0.5]}/>
     </group>
     </>
   );
